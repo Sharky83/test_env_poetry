@@ -9,8 +9,18 @@ python = "^3.10"
 requests = "2.31.0"
 flask = "3.0.3"
 pyjwt = "2.8.0"
-# Add a known vulnerable package for testing
-insecure-package = "0.1.0"
+# Add several known vulnerable/problematic packages for testing
+insecure-package = "0.1.0"  # Fake vulnerable package
+django = "2.2.0"  # Old Django, known vulnerabilities
+jinja2 = "2.10.1"  # Old Jinja2, known vulnerabilities
+urllib3 = "1.25.2"  # Old urllib3, known vulnerabilities
+cryptography = "2.1.4"  # Old cryptography, known vulnerabilities
+Pillow = "6.2.0"  # Old Pillow, known vulnerabilities
+paramiko = "2.4.0"  # Old paramiko, known vulnerabilities
+pyyaml = "4.2b1"  # Old PyYAML, known vulnerabilities
+sqlalchemy = "1.2.0"  # Old SQLAlchemy, known vulnerabilities
+setuptools = "40.0.0"  # Old setuptools, known vulnerabilities
+simplejson = "3.17.0"  # Old simplejson, known vulnerabilities
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
